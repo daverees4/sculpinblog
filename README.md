@@ -11,22 +11,14 @@ Features
 
 A very basic Sculpin based blog supporting the following features:
 
- * Very minimal Bootstrap based theme.
- * A handful of existing posts in `source/_posts/` to get you started. Feel
-   free to remove these when you are ready.
- * An about page at `/about`.
- * An index page at `/`. It displays all posts and paginates them.
- * A blog archive page at `/blog`. It displays post titles broken down by
-   month and is paginated.
- * A blog categories page at `/blog/categories`.
- * A blog category index at `/blog/categories/$category`. Similar to the blog
-   archive except broken down by each category.
- * A blog tags page at `/blog/tags`.
- * A blog tag index at `/blog/tags/$tag`. Similar to the blog archive
-   except broken down by each tag.
+* Homepage with contact info and a list of blog posts
+* Each blog post as a previous/next link and links to tag/category listings
+
 
 Install
 -------
+
+Make sure you hhave composer installed
 
 ```bash
 $ composer install
@@ -40,25 +32,6 @@ Build
 Your newly generated clone of sculpin-blog-skeleton is now
 accessible at `http://localhost:8000/`.
 
-Component Management
---------------------
-If you wish to install components via composer and have them automatically installed into your source directory you will need the following configuration options to your composer.json file.
-
-- component-dir: The directory you wish the components to be installed
-- components: An array of component names to be installed
-
-```
-"config": {
-    "component-dir": "source/components",
-    "components": [
-        "components/bootstrap",
-        "components/jquery",
-        "components/highlightjs"
-    ]
-}
-``` 
-
-The component manager will introspect these values to determine what it needs to copy into your source directory on `composer install`.
 
 Previewing Development Builds
 -----------------------------
