@@ -1,0 +1,24 @@
+---
+layout: default
+title: Naomi Turner
+generator: pagination
+pagination:
+    max_per_page: 3000
+use:
+    - posts
+
+---
+
+
+<h1>Dave</h1>
+<p>Music and tech.</p>
+<h2>Contact</h2>
+<p>dave@dave.com</p>
+<h2>Blog posts</h2>
+{% for post in page.pagination.items %}
+    <article>
+        <header>
+            <p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p>
+        </header>
+    </article>
+{% endfor %}
